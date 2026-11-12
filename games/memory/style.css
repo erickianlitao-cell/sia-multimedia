@@ -1,0 +1,7 @@
+.memory-board { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; max-width: 400px; margin: 0 auto; }
+.mcard {
+  aspect-ratio: 1/1; border: none; border-radius: 12px; font-size: 2.2rem; cursor: pointer;
+  background: var(--primary); color: transparent; transition: transform .2s, background .2s;
+}
+.mcard.flipped { background: #fff; color: #000; transform: rotateY(360deg); }
+.mcard.matched { background: var(--success); color: #000; cursor: default; }

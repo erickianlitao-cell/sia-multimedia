@@ -1,0 +1,7 @@
+.board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 330px; margin: 0 auto; }
+.cell {
+  aspect-ratio: 1/1; background: var(--card); border: none; border-radius: 12px;
+  font-size: 3rem; color: #fff; cursor: pointer; transition: .15s;
+}
+.cell:hover:not(:disabled) { background: var(--card-hover); }
+.cell.win { background: var(--success); }
